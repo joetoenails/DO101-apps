@@ -3,7 +3,9 @@ block content
   .container
       h2 
         p
-         | OpenShift Weather App
+         | OpenShift Weather App 2
+        p
+          Units = #{process.env.units}
       br
       br
       .row
@@ -28,3 +30,4 @@ block content
                p Humidity = #{weather.main.humidity} &#37;
                p Min = #{weather.main.temp_min} !{units}
                p Max = #{weather.main.temp_max} !{units}
+               
